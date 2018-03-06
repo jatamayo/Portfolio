@@ -85,14 +85,14 @@
     .profile_image{
 		max-width: 130px;
 		max-height: 130px;
-		margin-top: -100px;
+		margin-top: -120px;
 	}
 	.profile_name{
 		margin-top: 20px;
 		margin-bottom: 10px;
 		text-shadow: 2px 2px black;
 		font-size: 35px;
-		color:blue;
+		color:white;
 	}
 	.profile_profesion{
 		font-size: 15px;
