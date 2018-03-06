@@ -10,10 +10,15 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    max-height: 200px;
+    max-width: 200px;
 }
 .profile_name{
-	margin-top: 50px;
+	margin-top: 40px;
+	margin-bottom: -25px;
 	text-shadow: 2px 2px black;
+	font-size: 60px;
+	color:white;
 }
 .profile_profesion{
 	font-size: 30px;
@@ -30,28 +35,70 @@
 }
 
 .skill_logo1{
-	height: 90px;
+	height: 80px;
 	width: 130px;
-	margin-top: 25px;
+	margin-top: 75px;
 }
 .skill_logo2{
-	margin-top: 25px;
-	height: 65px;
+	margin-top: 75px;
+	height: 60px;
 	width: 110px;
 }
 .skill_logo3{
-	height: 50px;
-	width: 80px;
+	height: 70px;
+	width: 140px;
+	margin-top: 75px;
 }
 .skill_logo4{
-	height: 50px;
-	width: 80px;
+	height: 75px;
+	width: 150px;
+	margin-top: 75px;
 }
 .skill_logo5{
-	height: 50px;
-	width: 80px;
+	height: 60px;
+	width: 100px;
+	margin-top: 75px;
 }
 .skill_logo6{
-	height: 50px;
-	width: 80px;
+	height: 40px;
+	width: 110px;
+	margin-top: 75px;
+}
+.skill_logo7{
+	height: 70px;
+	width: 100px;
+	margin-top: 55px;
+}
+.skill_logo8{
+	height: 58px;
+	width: 100px;
+	margin-top: 75px;
+}
+@media only screen and (max-width: 768px) {
+    .skill_box{
+        border-bottom: 1px solid #BDBDBD;
+    }
+    .center_image{
+    	margin-bottom: 50px;
+    }
+    /**/
+    .profile_image{
+		max-width: 140px;
+		max-height: 140px;
+	}
+	.profile_name{
+		margin-top: 20px;
+		margin-bottom: 10px;
+		text-shadow: 2px 2px black;
+		font-size: 35px;
+		color:white;
+	}
+	.profile_profesion{
+		font-size: 20px;
+		color:#FF5126;
+		margin-top: -20px;
+		text-shadow: 2px 2px black;
+	}	
+	/**/
+
 }
