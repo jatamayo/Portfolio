@@ -1,0 +1,37 @@
+/********  mediaQueries  *********/
+@media (min-width:320px)  { 
+/* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+    .MainContainer_Section{
+        width:80%;
+    }
+}
+@media (min-width:480px)  {
+/* smartphones, Android phones, landscape iPhone */ 
+    .MainContainer_Section{
+        width:80%;
+    }
+}
+@media (min-width:600px)  {
+/* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
+    .MainContainer_Section{
+        width:50%;
+    }
+}
+@media (min-width:801px)  {
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+    .MainContainer_Section{
+        width:50%;
+    } 
+}
+@media (min-width:1025px) {
+/* big landscape tablets, laptops, and desktops */
+    .MainContainer_Section{
+        width:65%;
+    }
+}
+@media (min-width:1281px) {
+/* hi-res laptops and desktops */
+    .MainContainer_Section{
+        width:65%;
+    }
+}
