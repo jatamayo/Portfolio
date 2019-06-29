@@ -1,6 +1,7 @@
 
 body, html {
   height: 100%;
+  background-color: #D8D8D8;
 }
 
 /******** Paralax effect *********/
@@ -48,7 +49,7 @@ body, html {
   justify-content: center;
 }
 .skills_Container{
-  background-color: white;
+  background-color: #D8D8D8;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -56,12 +57,13 @@ body, html {
   align-content: center;
 }
 .skills_Container_Child{
-  background-color: #F2F2F2;
+  border-radius: 5px;
+  background-color: white;
   margin-top: 25px;
   margin-left: 10px;
   margin-right: 10px;
   width: 275px;
-  height: 300px;
+  height: 315px;
   padding: 10px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
@@ -69,7 +71,20 @@ body, html {
 .skills_Container_BottomMargin{
   margin-bottom: 25px;
 }
-
+/* Zoom In #1 */
+.image_over_effect img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.image_over_effect :hover img {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+.skills_Container_Child:hover{
+  background-color: white;
+}
 /********  Cards  *********/
 /* Angular card */
 .skills_Container_Child_Angular:hover {
@@ -86,6 +101,22 @@ body, html {
   height:125px;
   margin-left:68px;
 }
+.angular_button{
+  border:solid 2px #de140e;
+  background-color: white;
+  color:#de140e;
+  font-weight: bolder;
+  border-radius: 7px;
+  margin-top: 15px;
+}
+button.button_angular{
+  color:#940505;
+  border: 3px solid #de140e;
+}
+button.button_angular:before{
+  background-color: #de140e;
+}
+
 /* React card */
 .skills_Container_Child_React:hover {
   box-shadow: 0 14px 28px rgba(3, 172, 250, 0.25), 0 10px 10px rgba(0,0,0,0.22);
@@ -100,6 +131,22 @@ body, html {
   width:200px;
   height:150px;
   margin-left:35px;
+}
+
+.react_button{
+  border:solid 2px #61dbfb;
+  background-color: white;
+  color:#61dbfb;
+  font-weight: bolder;
+  border-radius: 7px;
+  margin-top: 15px;
+}
+button.button_react{
+  color:#007b9b;
+  border: 3px solid #61dbfb;
+}
+button.button_react:before{
+  background-color: #61dbfb;
 }
 /* NODE card */
 .skills_Container_Child_Node:hover {
@@ -116,8 +163,22 @@ body, html {
   height:125px;
   margin-left:-12px;
 }
-
-/* NODE card */
+.node_button{
+  border:solid 2px #90c53f;
+  background-color: white;
+  color:#90c53f;
+  font-weight: bolder;
+  border-radius: 7px;
+  margin-top: 15px;
+}
+button.button_node{
+  color:#528e00;
+  border: 3px solid #90c53f;
+}
+button.button_node:before{
+  background-color: #90c53f;
+}
+/* JS card */
 .skills_Container_Child_js:hover {
   box-shadow: 0 14px 28px rgba(245, 229, 6, 0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
@@ -131,4 +192,158 @@ body, html {
   width:260px;
   height:125px;
   margin-left:4px;
+}
+.js_button{
+  border:solid 2px #ffd83a;
+  background-color: white;
+  color:#ffd83a;
+  font-weight: bolder;
+  border-radius: 7px;
+  margin-top: 15px;
+}
+button.button_js{
+  color:#ffd83a;
+  border: 3px solid #ffd83a;
+}
+button.button_js:before{
+  background-color: #ffd83a;
+}
+/* HTML card */
+.skills_Container_Child_html:hover {
+  box-shadow: 0 14px 28px rgba(245, 229, 6, 0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.card_image_container_html{
+  height: 150px;
+  background: rgb(18,28,37);
+  background: linear-gradient(90deg, rgba(18,28,37,1) 0%, rgba(233,114,36,1) 100%);
+}
+.card_image_html{
+  margin-top: 10px;
+  width:160px;
+  height:125px;
+  margin-left:55px;
+}
+.html_button{
+  border:solid 2px #e97224;
+  background-color: white;
+  color:#e97224;
+  font-weight: bolder;
+  border-radius: 7px;
+  margin-top: 15px;
+}
+button.button_html{
+  color:#e97224;
+  border: 3px solid #e97224;
+}
+button.button_html:before{
+  background-color: #e97224;
+}
+
+/* bootstrap card */
+.skills_Container_Child_bootstrap:hover {
+  box-shadow: 0 14px 28px rgba(245, 229, 6, 0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.card_image_container_bootstrap{
+  height: 150px;
+  background: rgb(18,28,37);
+  background: linear-gradient(90deg, rgba(18,28,37,1) 0%, rgba(142,105,198,1) 100%);
+}
+.card_image_bootstrap{
+  margin-top: 10px;
+  width:130px;
+  height:125px;
+  margin-left:67px;
+}
+.bootstrap_button{
+  border:solid 2px #563d7b;
+  background-color: white;
+  color:#563d7b;
+  font-weight: bolder;
+  border-radius: 7px;
+  margin-top: 15px;
+}
+button.button_bootstrap{
+  color:#563d7b;
+  border: 3px solid #563d7b;
+}
+button.button_bootstrap:before{
+  background-color: #563d7b;
+}
+/* python card */
+.skills_Container_Child_python:hover {
+  box-shadow: 0 14px 28px rgba(245, 229, 6, 0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.card_image_container_python{
+  height: 150px;
+  background: rgb(52,121,175);
+  background: linear-gradient(90deg, rgba(52,121,175,1) 0%, rgba(255,217,71,1) 100%);
+}
+.card_image_python{
+  margin-top: 20px;
+  width:105px;
+  height:105px;
+  margin-left:75px;
+}
+.python_button{
+  border:solid 2px #563d7b;
+  background-color: white;
+  color:#563d7b;
+  font-weight: bolder;
+  border-radius: 7px;
+  margin-top: 15px;
+}
+button.button_python{
+  color:#563d7b;
+  border: 3px solid #563d7b;
+}
+button.button_python:before{
+  background-color: #563d7b;
+}
+
+
+/* ************* btn effect *************** */
+.button {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+button.finbyz-button {
+  text-decoration: none;
+  background-color: #fff;
+  -webkit-transition: .3s all ease;
+  transition: .3s ease all;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  width: 90%;
+  border-radius: 2px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.1);
+  z-index: 2;
+}
+button.finbyz-button:before {
+  -webkit-transition: .5s all ease;
+  transition: .5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: '';
+  z-index: -1;
+}
+button.finbyz-button:hover,
+button.finbyz-button:focus
+{
+color: #FFF;
+}
+button.finbyz-button:hover:before,
+button.finbyz-button:focus:before{
+-webkit-transition: 0.5s all ease;
+transition: 0.5s all ease;
+left: 0;
+right: 0;
+opacity: 1;
 }
