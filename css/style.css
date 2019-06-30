@@ -517,28 +517,19 @@ opacity: 1;
 .footer_skills5{background-color: skyblue;}
 
 .footer_container_jobs{
-  background-color: lightgreen;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   display: flex;
   flex-direction: row;
 }
-.footer_job1{
-  background-color: blue;
-}
-.footer_job2{
-  background-color: brown;
-}
-.footer_job3{
-  background-color: royalblue;
-}
-.footer_job4{
-  background-color: grey;
-}
-
 .footer_footer{
   background-color: blue;
   color:#848484;
   align-self: flex-end;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
 }
