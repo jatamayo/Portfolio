@@ -114,7 +114,8 @@ button.button_angular{
   border: 3px solid #de140e;
 }
 button.button_angular:before{
-  background-color: #de140e;
+  background: rgb(59,11,11);
+  background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(59,11,11,1) 100%);
 }
 
 /* React card */
@@ -146,7 +147,8 @@ button.button_react{
   border: 3px solid #61dbfb;
 }
 button.button_react:before{
-  background-color: #61dbfb;
+  background: rgb(18,28,37);
+  background: linear-gradient(90deg, rgba(0,216,255,1) 0%, rgba(18,28,37,1) 100%);
 }
 /* NODE card */
 .skills_Container_Child_Node:hover {
@@ -176,7 +178,8 @@ button.button_node{
   border: 3px solid #90c53f;
 }
 button.button_node:before{
-  background-color: #90c53f;
+  background: rgb(18,28,37);
+  background: linear-gradient(90deg, rgba(18,28,37,1) 0%, rgba(144,197,63,1) 100%);
 }
 /* JS card */
 .skills_Container_Child_js:hover {
@@ -206,11 +209,12 @@ button.button_js{
   border: 3px solid #ffd83a;
 }
 button.button_js:before{
-  background-color: #ffd83a;
+  background: rgb(18,28,37);
+  background: linear-gradient(90deg, rgba(255,216,58,1) 0%, rgba(18,28,37,1) 100%);
 }
 /* HTML card */
 .skills_Container_Child_html:hover {
-  box-shadow: 0 14px 28px rgba(245, 229, 6, 0.25), 0 10px 10px rgba(0,0,0,0.22);
+  box-shadow: 0 14px 28px rgba(219, 102, 7, 0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 .card_image_container_html{
   height: 150px;
@@ -236,12 +240,13 @@ button.button_html{
   border: 3px solid #e97224;
 }
 button.button_html:before{
-  background-color: #e97224;
+  background: rgb(18,28,37);
+  background: linear-gradient(90deg, rgba(233,114,36,1) 0%, rgba(18,28,37,1) 100%);
 }
 
-/* bootstrap card */
+/*************** bootstrap card ******************/
 .skills_Container_Child_bootstrap:hover {
-  box-shadow: 0 14px 28px rgba(245, 229, 6, 0.25), 0 10px 10px rgba(0,0,0,0.22);
+  box-shadow: 0 14px 28px rgba(67, 35, 88, 0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 .card_image_container_bootstrap{
   height: 150px;
@@ -267,9 +272,11 @@ button.button_bootstrap{
   border: 3px solid #563d7b;
 }
 button.button_bootstrap:before{
-  background-color: #563d7b;
+  background: rgb(18,28,37);
+  background: linear-gradient(90deg, rgba(142,105,198,1) 0%, rgba(18,28,37,1) 100%);
 }
-/* python card */
+
+/*************** python card *********************/
 .skills_Container_Child_python:hover {
   box-shadow: 0 14px 28px rgba(245, 229, 6, 0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
@@ -285,21 +292,147 @@ button.button_bootstrap:before{
   margin-left:75px;
 }
 .python_button{
-  border:solid 2px #563d7b;
+  border:solid 2px #3479af;
   background-color: white;
-  color:#563d7b;
+  color:#3479af;
   font-weight: bolder;
   border-radius: 7px;
   margin-top: 15px;
 }
 button.button_python{
-  color:#563d7b;
-  border: 3px solid #563d7b;
+  color:#3479af;
+  border: 3px solid #3479af;
 }
 button.button_python:before{
-  background-color: #563d7b;
+  background: rgb(255,217,71);
+  background: linear-gradient(90deg, rgba(255,217,71,1) 0%, rgba(52,121,175,1) 100%);
+}
+/*************** java card *********************/
+.skills_Container_Child_java:hover {
+  box-shadow: 0 14px 28px rgba(221, 124, 14, 0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.card_image_container_java{
+  height: 150px;
+  background: rgb(83,130,161);
+  background: linear-gradient(90deg, rgba(83,130,161,1) 0%, rgba(231,111,0,1) 100%);
+}
+.card_image_java{
+  margin-top: 20px;
+  width:90px;
+  height:105px;
+  margin-left:85px;
+}
+.java_button{
+  border:solid 2px #3479af;
+  background-color: white;
+  color:#3479af;
+  font-weight: bolder;
+  border-radius: 7px;
+  margin-top: 15px;
+}
+button.button_java{
+  color:#3479af;
+  border: 3px solid #3479af;
+}
+button.button_java:before{
+  background: rgb(83,130,161);
+  background: linear-gradient(90deg, rgba(231,111,0,1) 0%, rgba(83,130,161,1) 100%);
+}
+/*************** C# card *********************/
+.skills_Container_Child_c:hover {
+  box-shadow: 0 14px 28px rgba(87, 16, 134, 0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.card_image_container_c{
+  height: 150px;
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(150,58,174,1) 100%);
+}
+.card_image_c{
+  margin-top: -25px;
+  width:200px;
+  height:200px;
+  margin-left:25px;
+}
+.c_button{
+  border:solid 2px #963aae;
+  background-color: white;
+  color:#963aae;
+  font-weight: bolder;
+  border-radius: 7px;
+  margin-top: 15px;
+}
+button.button_c{
+  color:#963aae;
+  border: 3px solid #963aae;
+}
+button.button_c:before{
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(150,58,174,1) 0%, rgba(0,0,0,1) 100%);
 }
 
+/*************** sql card *********************/
+.skills_Container_Child_sql:hover {
+  box-shadow: 0 14px 28px rgba(23, 85, 177, 0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.card_image_container_sql{
+  height: 150px;
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(47,137,196,1) 100%);
+}
+.card_image_sql{
+  margin-top: 20px;
+  width:105px;
+  height:105px;
+  margin-left:75px;
+}
+.sql_button{
+  border:solid 2px #3399db;
+  background-color: white;
+  color:#3399db;
+  font-weight: bolder;
+  border-radius: 7px;
+  margin-top: 15px;
+}
+button.button_sql{
+  color:#3399db;
+  border: 3px solid #3399db;
+}
+button.button_sql:before{
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(47,137,196,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+/*************** mongo card *********************/
+.skills_Container_Child_mongo:hover {
+  box-shadow: 0 14px 28px rgba(43, 104, 20, 0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.card_image_container_mongo{
+  height: 150px;
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(129,197,100,1) 100%);
+}
+.card_image_mongo{
+  margin-top: 20px;
+  width:105px;
+  height:105px;
+  margin-left:75px;
+}
+.mongo_button{
+  border:solid 2px #81c564;
+  background-color: white;
+  color:#81c564;
+  font-weight: bolder;
+  border-radius: 7px;
+  margin-top: 15px;
+}
+button.button_mongo{
+  color:#81c564;
+  border: 3px solid #81c564;
+}
+button.button_mongo:before{
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(129,197,100,1) 0%, rgba(0,0,0,1) 100%);
+}
 
 /* ************* btn effect *************** */
 .button {
