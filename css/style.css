@@ -483,14 +483,21 @@ opacity: 1;
 /* ************************************************* */
 /* footer */
 .footer_main_container{
-  background-color: rgb(125, 163, 233);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
+.skillsTitle{
+  color:#BDBDBD;
+  margin-left: 10px;
+  margin-top: 50px;
+}
+.skillsTitle:hover{
+  color:#848484;
+  cursor: pointer;
+}
 .footer_header{
-  background-color: red;
 }
 
 .footer_header, .footer_container_skills, .footer_container_jobs, .footer_footer{
@@ -505,16 +512,15 @@ opacity: 1;
   align-items: center;
 }
 .footer_container_skills{
-  background-color: green;
+  padding-top: 25px;
+  padding-bottom: 25px;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
-.footer_skills1{background-color:  yellow;}
-.footer_skills2{background-color: orange;}
-.footer_skills3{background-color: purple;}
-.footer_skills4{background-color: orangered;}
-.footer_skills5{background-color: skyblue;}
+.footer_skills1, .footer_skills2, .footer_skills3, .footer_skills4{
+  color: #848484;
+}
 
 .footer_container_jobs{
   flex-wrap: wrap;
@@ -522,9 +528,9 @@ opacity: 1;
   justify-content: center;
   display: flex;
   flex-direction: row;
+  margin-top: 50px;
 }
 .footer_footer{
-  background-color: blue;
   color:#848484;
   align-self: flex-end;
   flex-wrap: wrap;
