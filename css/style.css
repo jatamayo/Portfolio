@@ -480,3 +480,28 @@ left: 0;
 right: 0;
 opacity: 1;
 }
+/* ************************************************* */
+.jobs_images{
+  width: 200px;
+  height: 100px;
+}
+.cognits_image{
+  width: 250px;
+  height: 225px;
+}
+.pentcloud_image{
+  width: 250px;
+  height: 65px;
+}
+.udacity_image{
+  width: 250px;
+  height: 100px;
+}
+.capgemini_image{
+  width: 250px;
+  height: 100px;
+}
+.legalText{
+  color:#848484;
+  align-self: flex-end;
+}
