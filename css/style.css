@@ -481,27 +481,64 @@ right: 0;
 opacity: 1;
 }
 /* ************************************************* */
-.jobs_images{
-  width: 200px;
-  height: 100px;
+/* footer */
+.footer_main_container{
+  background-color: rgb(125, 163, 233);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-.cognits_image{
-  width: 250px;
-  height: 225px;
+
+.footer_header{
+  background-color: red;
 }
-.pentcloud_image{
-  width: 250px;
-  height: 65px;
+
+.footer_header, .footer_container_skills, .footer_container_jobs, .footer_footer{
+  flex-grow: 1;
+  flex-basis: 100%;
 }
-.udacity_image{
-  width: 250px;
-  height: 100px;
+.footer_subContainer_skills{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
-.capgemini_image{
-  width: 250px;
-  height: 100px;
+.footer_container_skills{
+  background-color: green;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
-.legalText{
+.footer_skills1{background-color:  yellow;}
+.footer_skills2{background-color: orange;}
+.footer_skills3{background-color: purple;}
+.footer_skills4{background-color: orangered;}
+.footer_skills5{background-color: skyblue;}
+
+.footer_container_jobs{
+  background-color: lightgreen;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+.footer_job1{
+  background-color: blue;
+}
+.footer_job2{
+  background-color: brown;
+}
+.footer_job3{
+  background-color: royalblue;
+}
+.footer_job4{
+  background-color: grey;
+}
+
+.footer_footer{
+  background-color: blue;
   color:#848484;
   align-self: flex-end;
 }

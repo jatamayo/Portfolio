@@ -4,34 +4,49 @@
     .MainContainer_Section{
         width:80%;
     }
+    .image_job1{width:50px ;height: 50px;}
+    .image_job2{width:50px ;height: 50px;}
+    .image_job3{width:50px ;height: 50px;}
+    .image_job4{width:50px ;height: 50px;}
 }
 @media (min-width:480px)  {
 /* smartphones, Android phones, landscape iPhone */ 
-    .MainContainer_Section{
-        width:80%;
-    }
+    .MainContainer_Section{width:80%;}
+    .image_job1{width:50px ;height: 50px;}
+    .image_job2{width:50px ;height: 50px;}
+    .image_job3{width:50px ;height: 50px;}
+    .image_job4{width:50px ;height: 50px;}
 }
 @media (min-width:600px)  {
 /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
-    .MainContainer_Section{
-        width:50%;
-    }
+    .MainContainer_Section{width:50%;}
+    .image_job1{width:100px ;height: 100px;}
+    .image_job2{width:100px ;height: 100px;}
+    .image_job3{width:100px ;height: 100px;}
+    .image_job4{width:100px ;height: 100px;}
 }
 @media (min-width:801px)  {
 /* tablet, landscape iPad, lo-res laptops ands desktops */
-    .MainContainer_Section{
-        width:50%;
-    } 
+    .MainContainer_Section{width:50%;}
+    .image_job1{width:100px ;height: 100px;}
+    .image_job2{width:100px ;height: 100px;}
+    .image_job3{width:100px ;height: 100px;}
+    .image_job4{width:100px ;height: 100px;}
 }
 @media (min-width:1025px) {
 /* big landscape tablets, laptops, and desktops */
-    .MainContainer_Section{
-        width:65%;
-    }
+    .MainContainer_Section{width:65%;}
+    .image_job1{width:200px ;height: 200px;}
+    .image_job2{width:200px ;height: 200px;}
+    .image_job3{width:200px ;height: 200px;}
+    .image_job4{width:200px ;height: 200px;}
 }
 @media (min-width:1281px) {
 /* hi-res laptops and desktops */
-    .MainContainer_Section{
-        width:65%;
-    }
+    .MainContainer_Section{width:65%;}
+    .image_job1{width:200px ;height: 200px;}
+    .image_job2{width:200px ;height: 200px;}
+    .image_job3{width:200px ;height: 200px;}
+    .image_job4{width:200px ;height: 200px;}
+    
 }
