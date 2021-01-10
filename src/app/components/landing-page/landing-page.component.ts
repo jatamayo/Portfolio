@@ -5,6 +5,7 @@ import { Certification } from '../../../app/model/certifications';
 import { Skill } from '../../../app/model/skills';
 import { Job } from '../../../app/model/jobs';
 
+
 @Component({
     selector: 'app-landing-page',
     templateUrl: './landing-page.component.html',
@@ -26,6 +27,9 @@ export class LandingPageComponent implements OnInit {
         this.Certifications = this.appService.getCertificationsData();
         this.skills = this.appService.getSkills();
         this.jobs = this.appService.getJobs();
+    }
+    gotoPortfolioProject(link){
+        window.open(link, "_blank");
     }
     certificate(img){
         this.certificateImage = img;

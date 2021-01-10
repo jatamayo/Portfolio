@@ -3,9 +3,16 @@ export class Card {
     cardImageType: String;
     cardContainerType: String;
     cardButtonType: String;
-    projects: {
-        project1: String;
-        project2: String;
-        project3: String;
-    }
+    projects: [
+        {
+            projectName: String;
+            link: String;
+        },{
+            projectName: String;
+            link: String;
+        },{
+            projectName: String;
+            link: String;
+        }
+    ]
 }

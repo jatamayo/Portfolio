@@ -17,6 +17,11 @@ body, html {
     width: 100%;
     height: 100%;
 }
+.centerDescription{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .fullHeigh{
     height: 100vh;
 }
@@ -98,9 +103,9 @@ body, html {
     background: rgb(0, 0, 0);
     background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(47, 137, 196, 1) 100%);
 }
-.card_image_container_c {
+.card_image_container_css {
     background: rgb(0, 0, 0);
-    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(150, 58, 174, 1) 100%);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 145, 213, 1) 100%);
 }
 .card_image_container_java {
     background: rgb(83, 130, 161);
@@ -132,11 +137,11 @@ body, html {
     height: 500x;
     margin-left: 36px;
 }
-.card_image_c {
-    margin-top: -15px;
-    width: 125px;
-    height: 125px;
-    margin-left: 25px;
+.card_image_css {
+    margin-top: 5px;
+    width: 70px;
+    height: 85px;
+    margin-left: 50px;
 }
 .card_image_java {
     margin-top: 5px;
@@ -241,9 +246,9 @@ button.button_sql:before {
     background: rgb(0, 0, 0);
     background: linear-gradient(90deg, rgba(47, 137, 196, 1) 0%, rgba(0, 0, 0, 1) 100%);
 }
-button.button_c {
-    color: #963aae;
-    border: 3px solid #963aae;
+button.button_css {
+    color: #0091d5;
+    border: 3px solid #0091d5;
 }
 button.button_c:before {
     background: rgb(0, 0, 0);
@@ -330,10 +335,10 @@ button.finbyz-button:hover:before, button.finbyz-button:focus:before {
 }
 /********* CERTIFICACIONES ************/
 .platziLogo {
-    height: 60px;
+    height: 55px;
 }
 .programmingLogo{
-    height: 50px;
+    height: 40px;
     margin-top: 10px;
     margin-bottom: 10px;
 
@@ -352,11 +357,11 @@ button.finbyz-button:hover:before, button.finbyz-button:focus:before {
 }
 .divPlatziLogo{
     width: 45px;
-    height: 40px;
+    height: 35px;
     padding-right: 10px;
 }
 .certificateTitle{
-    padding-top: 12px;
+    padding-top: 8px;
     width: 100%;
 }
 .certificateDiv{
@@ -379,7 +384,7 @@ button.finbyz-button:hover:before, button.finbyz-button:focus:before {
     color:white;
 }
 .skillTitle{
-    padding: 10px;
+    color:rgb(189, 189, 189);
 }
 
 .btn-ripple {

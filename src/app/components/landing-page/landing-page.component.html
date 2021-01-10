@@ -1,7 +1,7 @@
 <!-- SIMPLE LANDING PAGE -->
 <!-- Parallax Container 1 -->
 <div class="parallax parallaxContainer1 overlay">
-    <div class="overlay box">
+    <div class="overlay box centerDescription">
         <div class="MainContainer_Section fullHeigh">
             <div>
                 <h2 class="User_Description_Title1">Jose Alejandro Tamayo <span class="User_Description_Title2">is
@@ -32,14 +32,14 @@
                         <img class="{{card.cardImageType}}" src="../../../assets/images/logos/{{card.img}}" alt="">
                     </div>
                     <div>
-                        <div class="button"><button type="submit"
-                                class="{{card.cardButtonType}} finbyz-button"><b>{{card.projects.project1}}</b></button>
+                        <div *ngIf="card.projects[0].projectName" class="button"><button type="submit" (click)="gotoPortfolioProject(card.projects[0].link)"
+                                class="{{card.cardButtonType}} finbyz-button"><b>{{card.projects[0].projectName}}</b></button>
                         </div>
-                        <div class="button"><button type="submit"
-                                class="{{card.cardButtonType}} finbyz-button "><b>{{card.projects.project2}}</b></button>
+                        <div *ngIf="card.projects[1].projectName" class="button"><button type="submit" (click)="gotoPortfolioProject(card.projects[1].link)"
+                                class="{{card.cardButtonType}} finbyz-button "><b>{{card.projects[1].projectName}}</b></button>
                         </div>
-                        <div class="button"><button type="submit"
-                                class="{{card.cardButtonType}} finbyz-button "><b>{{card.projects.project3}}</b></button>
+                        <div *ngIf="card.projects[2].projectName" class="button"><button type="submit" (click)="gotoPortfolioProject(card.projects[2].link)"
+                                class="{{card.cardButtonType}} finbyz-button "><b>{{card.projects[2].projectName}}</b></button>
                         </div>
                     </div>
                 </div>
@@ -83,7 +83,7 @@
                 <img class="programmingLogo" src="../../../assets/images/logos/programming.png" alt="">
             </div>
             <!-- SKILLS -->
-            <div style="display: flex; justify-content: center; align-items: center; height: 60%; margin-top: 25px;">
+            <div style="display: flex; justify-content: center; align-items: center; height: 60%; margin-top: 50px;">
                 <div>
                     <div style=" display: flex;" *ngFor="let skill of skills; index as i">
                         <div
@@ -102,7 +102,7 @@
                 </div>
             </div>
             <!-- JOBS -->
-            <div style="position: absolute; bottom: 0; width: 100%; height: 75px;">
+            <div style="position: absolute; bottom: 0; width: 100%; height: 125px;">
                 <div style="display: flex;justify-content: center; align-items: center;">
                     <div *ngFor="let job of jobs">
                         <img class="{{job.class}}" src="../../../assets/images/jobs/{{job.img}}" alt="">
@@ -112,56 +112,3 @@
         </div>
     </div>
 </div>
-
-<!-- <div class="parallax parallaxContainer2 overlay">
-    <div class="footer_main_container overlay box">
-        <div class="footer_container_skills">
-            <div class="footer_subContainer_skills">
-                <div class="footer_skills1">
-                    <p>HTML</p>
-                    <p>CSS</p>
-                    <p>SASS</p>
-                    <p>Flexbox/Grid system</p>
-                    <p>Bootstrap</p>
-                    <p>Version control GIT</p>
-                </div>
-                <div class="footer_skills2">
-                    <p>Javascript</p>
-                    <p>Typescript</p>
-                    <p>AngularJS</p>
-                    <p>ReactJS</p>
-                    <p>NodeJS</p>
-                    <p>JQuery</p>
-                </div>
-            </div>
-            <div class="footer_subContainer_skills">
-                <div class="footer_skills3">
-                    <p>MongoDB</p>
-                    <p>SQL</p>
-                    <p>MySql</p>
-                    <p>Python</p>
-                    <p>Java</p>
-                    <p>IONIC</p>
-                </div>
-                <div class="footer_skills4">
-                    <p>RPA Skills</p>
-                    <p>Uipath</p>
-                    <p>WorkFusion</p>
-                    <p>Blue Prism</p>
-                    <p>RPA Development</p>
-                    <p>RPA Bussiness Analysis</p>
-                </div>
-            </div>
-        </div>
-        <div class="footer_container_jobs">
-            <div class="footer_job1"><img class="image_job1" src="./images/jobs/cognits.png" alt=""></div>
-            <div class="footer_job2"><img class="image_job2" src="./images/jobs/pentcloud.png" alt=""></div>
-            <div class="footer_job3"><img class="image_job3" src="./images/jobs/udacity.png" alt=""></div>
-            <div class="footer_job4"><img class="image_job4" src="./images/jobs/capgemini.png" alt=""></div>
-            <div class="footer_job4"><img class="image_job5" src="./images/jobs/bdg.png" alt=""></div>
-        </div>
-        <div class="footer_footer">
-            <p class="legalText"><b>Legal and intellectual rights of the images whom it corresponds.</b></p>
-        </div>
-    </div>
-</div> -->
