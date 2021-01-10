@@ -1,0 +1,167 @@
+<!-- SIMPLE LANDING PAGE -->
+<!-- Parallax Container 1 -->
+<div class="parallax parallaxContainer1 overlay">
+    <div class="overlay box">
+        <div class="MainContainer_Section fullHeigh">
+            <div>
+                <h2 class="User_Description_Title1">Jose Alejandro Tamayo <span class="User_Description_Title2">is
+                        a</span> Full Stack Web Developer</h2>
+                <h4 class="User_Description_Title2">
+                    who studies at the academy of software <b class="User_Description_Title1">COGNITS</b> and worked
+                    for the technology world for 7 years. <br><br>
+                    Currently he is studing at <b class="User_Description_Title1">UMG Guatemala University</b>.
+                    <br><br> In his spare time he enjoys play pool and play video games with his friends.
+                </h4>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Parallax Container 2 -->
+<div class="parallax parallaxContainer2 overlay">
+    <div class="overlay box">
+        <div>
+            <div class="platziLogoDiv">
+                <br>
+                <img class="gitLogo" src="../../../assets/images/logos/git.png" alt="">
+            </div>
+            <br><br>
+            <div class="gitCards-wrap">
+                <!-- GIT CARDS -->
+                <div class="gitCard" *ngFor="let card of cards">
+                    <div class="{{card.cardContainerType}} card_image_container">
+                        <img class="{{card.cardImageType}}" src="../../../assets/images/logos/{{card.img}}" alt="">
+                    </div>
+                    <div>
+                        <div class="button"><button type="submit"
+                                class="{{card.cardButtonType}} finbyz-button"><b>{{card.projects.project1}}</b></button>
+                        </div>
+                        <div class="button"><button type="submit"
+                                class="{{card.cardButtonType}} finbyz-button "><b>{{card.projects.project2}}</b></button>
+                        </div>
+                        <div class="button"><button type="submit"
+                                class="{{card.cardButtonType}} finbyz-button "><b>{{card.projects.project3}}</b></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+        </div>
+    </div>
+</div>
+<!-- Parallax Container 3 -->
+<div class="parallax parallaxContainer3 overlay">
+    <div class="overlay box">
+        <div class="fullHeigh fullWidth">
+            <div class="platziLogoDiv">
+                <img class="platziLogo" src="../../../assets/images/platzi/platziLogoTitle.png" alt="">
+            </div>
+            <!-- PLATZI CERTIFICATIONS -->
+            <div style="display: flex; flex-wrap: wrap; justify-content: center;" data-toggle="modal"
+                data-target="#certificateDialog">
+                <div class="certificateDiv" *ngFor="let certification of Certifications">
+                    <div (click)="certificate(certification.img)">
+                        <img class="divPlatziLogo" src="../../../assets/images/platzi/platziLogo.png" alt="">
+                    </div>
+                    <div (click)="certificate(certification.img)" class="certificateTitle btn-ripple">{{certification.title}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="certificateDialog" tabindex="-1" role="dialog" aria-labelledby="certificateDialog"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document" style="display: flex; align-items: center; justify-content: center;">
+        <img style="width: 700px; height: 500px;" src="../../../assets/images/platzi/certificates/{{certificateImage}}" alt="">
+    </div>
+</div>
+<!-- Parallax Container 4 -->
+<div class="parallax parallaxContainer4 overlay">
+    <div class="overlay box">
+        <div class="fullHeigh fullWidth" style="position: relative;">
+            <div class="platziLogoDiv">
+                <img class="programmingLogo" src="../../../assets/images/logos/programming.png" alt="">
+            </div>
+            <!-- SKILLS -->
+            <div style="display: flex; justify-content: center; align-items: center; height: 60%; margin-top: 25px;">
+                <div>
+                    <div style=" display: flex;" *ngFor="let skill of skills; index as i">
+                        <div
+                            style="width: 180px; text-align: center;  margin: 1px 5px 5px 1px; color: white; font-size: 18px; font-weight: bolder;">
+                            <span class="skillTitle" *ngIf="i % 2 === 0">{{skill.title}}</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div style=" display: flex;" *ngFor="let skill of skills; index as i">
+                        <div
+                            style="width: 180px; text-align: center;  margin: 1px 5px 5px 1px; color: white; font-size: 18px; font-weight: bolder;">
+                            <span class="skillTitle" *ngIf="i % 2 !== 0">{{skill.title}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- JOBS -->
+            <div style="position: absolute; bottom: 0; width: 100%; height: 75px;">
+                <div style="display: flex;justify-content: center; align-items: center;">
+                    <div *ngFor="let job of jobs">
+                        <img class="{{job.class}}" src="../../../assets/images/jobs/{{job.img}}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="parallax parallaxContainer2 overlay">
+    <div class="footer_main_container overlay box">
+        <div class="footer_container_skills">
+            <div class="footer_subContainer_skills">
+                <div class="footer_skills1">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>SASS</p>
+                    <p>Flexbox/Grid system</p>
+                    <p>Bootstrap</p>
+                    <p>Version control GIT</p>
+                </div>
+                <div class="footer_skills2">
+                    <p>Javascript</p>
+                    <p>Typescript</p>
+                    <p>AngularJS</p>
+                    <p>ReactJS</p>
+                    <p>NodeJS</p>
+                    <p>JQuery</p>
+                </div>
+            </div>
+            <div class="footer_subContainer_skills">
+                <div class="footer_skills3">
+                    <p>MongoDB</p>
+                    <p>SQL</p>
+                    <p>MySql</p>
+                    <p>Python</p>
+                    <p>Java</p>
+                    <p>IONIC</p>
+                </div>
+                <div class="footer_skills4">
+                    <p>RPA Skills</p>
+                    <p>Uipath</p>
+                    <p>WorkFusion</p>
+                    <p>Blue Prism</p>
+                    <p>RPA Development</p>
+                    <p>RPA Bussiness Analysis</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer_container_jobs">
+            <div class="footer_job1"><img class="image_job1" src="./images/jobs/cognits.png" alt=""></div>
+            <div class="footer_job2"><img class="image_job2" src="./images/jobs/pentcloud.png" alt=""></div>
+            <div class="footer_job3"><img class="image_job3" src="./images/jobs/udacity.png" alt=""></div>
+            <div class="footer_job4"><img class="image_job4" src="./images/jobs/capgemini.png" alt=""></div>
+            <div class="footer_job4"><img class="image_job5" src="./images/jobs/bdg.png" alt=""></div>
+        </div>
+        <div class="footer_footer">
+            <p class="legalText"><b>Legal and intellectual rights of the images whom it corresponds.</b></p>
+        </div>
+    </div>
+</div> -->

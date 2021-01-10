@@ -1,0 +1,414 @@
+body, html {
+    height: 100%;
+    background-color: #D8D8D8;
+    padding: 0px;
+}
+
+/******** Paralax effect *********/
+.parallax {
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+}
+.fullHeigh{
+    height: 100vh;
+}
+.fullWidth{
+    width: 100%;
+}
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+    .parallaxContainer1 {
+        background-attachment: scroll;
+    }
+    .parallaxContainer2 {
+        background-attachment: scroll;
+    }
+}
+
+.parallaxContainer1 {
+    background-image: url('../../../assets/images/background1.jpg');
+}
+
+.parallaxContainer2 {
+    background-image: url('../../../assets/images/git.jpg');
+}
+
+.parallaxContainer3 {
+    background-image: url('../../../assets/images/background3.jpg');
+}
+
+.parallaxContainer4 {
+    background-image: url('../../../assets/images/background4.jpg');
+}
+/********  mainContainer_Section  *********/
+.MainContainer_Section {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.User_Description_Title1 {
+    color: #BDBDBD;
+}
+
+.User_Description_Title2 {
+    color: #848484;
+}
+/********  GIT CARDS SECCION ********/
+.gitCard{
+    background-color:#848484;
+    height: 200px;
+    width: 165px;
+    margin: 25px;
+    border-radius: 5px;
+}
+.gitCards-wrap{
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center;
+    width: 90%;
+    margin-left: 5%;
+}
+.card_image_container{
+    height: 100px;
+}
+/********  GIT CARDS COLORS ********/
+.card_image_container_html {
+    background: rgb(18, 28, 37);
+    background: linear-gradient(90deg, rgba(18, 28, 37, 1) 0%, rgba(233, 114, 36, 1) 100%);
+}
+.card_image_container_angular {
+    background: rgb(59, 11, 11);
+    background: linear-gradient(90deg, rgba(59, 11, 11, 1) 0%, rgba(255, 0, 0, 1) 100%);
+}
+.card_image_container_mongo {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(129, 197, 100, 1) 100%);
+}
+.card_image_container_sql {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(47, 137, 196, 1) 100%);
+}
+.card_image_container_c {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(150, 58, 174, 1) 100%);
+}
+.card_image_container_java {
+    background: rgb(83, 130, 161);
+    background: linear-gradient(90deg, rgba(83, 130, 161, 1) 0%, rgba(231, 111, 0, 1) 100%);
+}
+.card_image_container_python {
+    background: rgb(52, 121, 175);
+    background: linear-gradient(90deg, rgba(52, 121, 175, 1) 0%, rgba(255, 217, 71, 1) 100%);
+}
+.card_image_container_bootstrap {
+    background: rgb(18, 28, 37);
+    background: linear-gradient(90deg, rgba(18, 28, 37, 1) 0%, rgba(142, 105, 198, 1) 100%);
+}
+.card_image_container_js {
+    background: rgb(18, 28, 37);
+    background: linear-gradient(90deg, rgba(18, 28, 37, 1) 0%, rgba(255, 216, 58, 1) 100%);
+}
+.card_image_container_node {
+    background: rgb(18, 28, 37);
+    background: linear-gradient(90deg, rgba(18, 28, 37, 1) 0%, rgba(144, 197, 63, 1) 100%);
+}
+.card_image_container_react {
+    background: rgb(18, 28, 37);
+    background: linear-gradient(90deg, rgba(18, 28, 37, 1) 0%, rgba(0, 216, 255, 1) 100%);
+}
+.card_image_html {
+    margin-top: 1px;
+    width: 100px;
+    height: 500x;
+    margin-left: 36px;
+}
+.card_image_c {
+    margin-top: -15px;
+    width: 125px;
+    height: 125px;
+    margin-left: 25px;
+}
+.card_image_java {
+    margin-top: 5px;
+    width: 50px;
+    height: 75px;
+    margin-left: 60px;
+}
+.card_image_python {
+    margin-top: 10px;
+    width: 70px;
+    height: 70px;
+    margin-left: 55px;
+}
+.card_image_bootstrap {
+    margin-top: 2px;
+    width: 85px;
+    height: 85px;
+    margin-left: 42px;
+}
+.card_image_js {
+    margin-top: 10px;
+    width: 170px;
+    height: 70px;
+    margin-left: -1px;
+}
+.card_image_node {
+    margin-top: 10px;
+    width: 200px;
+    height: 70px;
+    margin-left: -12px;
+}
+.card_image_react {
+    margin-top: 0px;
+    width: 140px;
+    height: 90px;
+    margin-left: 15px;
+}
+.card_image_angular {
+    margin-top: 12px;
+    width: 70px;
+    height: 70px;
+    margin-left: 50px;
+}
+.card_image_mongo {
+    margin-top: 8px;
+    width: 80px;
+    height: 80px;
+    margin-left: 42px;
+}
+.card_image_sql {
+    margin-top: 13px;
+    width: 67px;
+    height: 67px;
+    margin-left: 50px;
+}
+/********  GIT CARDS BUTTONS ********/
+button.button_js {
+    color: #ffd83a;
+    border: 3px solid #ffd83a;
+}
+button.button_js:before {
+    background: rgb(18, 28, 37);
+    background: linear-gradient(90deg, rgba(255, 216, 58, 1) 0%, rgba(18, 28, 37, 1) 100%);
+}
+button.button_node {
+    color: #528e00;
+    border: 3px solid #90c53f;
+}
+button.button_node:before {
+    background: rgb(18, 28, 37);
+    background: linear-gradient(90deg, rgba(18, 28, 37, 1) 0%, rgba(144, 197, 63, 1) 100%);
+}
+button.button_html {
+    color: #e97224;
+    border: 3px solid #e97224;
+}
+button.button_html:before {
+    background: rgb(18, 28, 37);
+    background: linear-gradient(90deg, rgba(233, 114, 36, 1) 0%, rgba(18, 28, 37, 1) 100%);
+}
+button.button_react {
+    color: #007b9b;
+    border: 3px solid #61dbfb;
+}
+button.button_react:before {
+    background: rgb(18, 28, 37);
+    background: linear-gradient(90deg, rgba(0, 216, 255, 1) 0%, rgba(18, 28, 37, 1) 100%);
+}
+button.button_angular {
+    color: #940505;
+    border: 3px solid #de140e;
+}
+button.button_angular:before {
+    background: rgb(59, 11, 11);
+    background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(59, 11, 11, 1) 100%);
+}
+button.button_sql {
+    color: #3399db;
+    border: 3px solid #3399db;
+}
+button.button_sql:before {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(47, 137, 196, 1) 0%, rgba(0, 0, 0, 1) 100%);
+}
+button.button_c {
+    color: #963aae;
+    border: 3px solid #963aae;
+}
+button.button_c:before {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(150, 58, 174, 1) 0%, rgba(0, 0, 0, 1) 100%);
+}
+button.button_java {
+    color: #3479af;
+    border: 3px solid #3479af;
+}
+button.button_java:before {
+    background: rgb(83, 130, 161);
+    background: linear-gradient(90deg, rgba(231, 111, 0, 1) 0%, rgba(83, 130, 161, 1) 100%);
+}
+button.button_python {
+    color: #3479af;
+    border: 3px solid #3479af;
+}
+button.button_python:before {
+    background: rgb(255, 217, 71);
+    background: linear-gradient(90deg, rgba(255, 217, 71, 1) 0%, rgba(52, 121, 175, 1) 100%);
+}
+button.button_mongo {
+    color: #81c564;
+    border: 3px solid #81c564;
+}
+
+button.button_mongo:before {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(129, 197, 100, 1) 0%, rgba(0, 0, 0, 1) 100%);
+}
+/* ************* btn effect *************** */
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    height: 20px;
+    font-size: 10px;
+}
+.buttonCertificate {
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    width: 225px;
+    font-size: 17px;
+    border-radius: 18px;
+}
+button.finbyz-button {
+    text-decoration: none;
+    background-color: #fff;
+    -webkit-transition: .3s all ease;
+    transition: .3s ease all;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    width: 90%;
+    border-radius: 2px;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .1);
+    z-index: 2;
+}
+button.finbyz-button:before {
+    -webkit-transition: .5s all ease;
+    transition: .5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    z-index: -1;
+}
+button.finbyz-button:hover, button.finbyz-button:focus {
+    color: #FFF;
+}
+button.finbyz-button:hover:before, button.finbyz-button:focus:before {
+    -webkit-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+/********* CERTIFICACIONES ************/
+.platziLogo {
+    height: 60px;
+}
+.programmingLogo{
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.gitLogo {
+    height: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.platziLogoDiv{
+    background-color: #2c2f33;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divPlatziLogo{
+    width: 45px;
+    height: 40px;
+    padding-right: 10px;
+}
+.certificateTitle{
+    padding-top: 12px;
+    width: 100%;
+}
+.certificateDiv{
+    margin:25px;
+    display: flex;
+    color: #71ad0a;
+    background-color: white;
+    border: solid 3px #98ca3f;
+    width: 340px;
+    height: 40px;
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    border-radius: 15px 5px 5px 15px;
+    cursor: pointer;
+}
+.certificateDiv:hover{
+    display: flex;
+    background-color: #98ca3f;
+    color:white;
+}
+.skillTitle{
+    padding: 10px;
+}
+
+.btn-ripple {
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	transition: all ease-in-out .1s;
+}
+.btn-ripple::after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 25%;
+	height: 100%;
+	width: 50%;
+	background-color: #000;
+	border-radius: 50%;
+	opacity: 0;
+	pointer-events: none;
+	transition: all ease-in-out 1s;
+	transform: scale(5, 5);
+}
+.btn-ripple:active::after {
+	padding: 0;
+	margin: 0;
+	opacity: .1;
+	transition: 0s;
+	transform: scale(0, 0);
+}
+
+
