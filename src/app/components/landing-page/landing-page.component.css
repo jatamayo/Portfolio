@@ -43,14 +43,14 @@ body, html {
 
 /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
 
-@media only screen and (max-device-width: 1366px) {
+/* @media only screen and (max-device-width: 1366px) {
     .parallaxContainer1 {
         background-attachment: scroll;
     }
     .parallaxContainer2 {
         background-attachment: scroll;
     }
-}
+} */
 
 .parallaxContainer1 {
     background-image: url('https://firebasestorage.googleapis.com/v0/b/portfolio-4c6ee.appspot.com/o/background1.jpg?alt=media&token=73a63b65-30d5-45f2-af34-190ff4de04e8');
