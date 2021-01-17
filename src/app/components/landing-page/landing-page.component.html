@@ -1,17 +1,37 @@
 <!-- SIMPLE LANDING PAGE -->
 <!-- Parallax Container 1 -->
 <div class="parallax parallaxContainer1 overlay">
-    <div class="overlay box centerDescription">
-        <div class="MainContainer_Section fullHeigh">
-            <div>
-                <h2 class="User_Description_Title1">Jose Alejandro Tamayo <span class="User_Description_Title2">is
-                        a</span> Full Stack Web Developer</h2>
-                <h4 class="User_Description_Title2">
-                    who studies at the academy of software <b class="User_Description_Title1">COGNITS</b> and worked
-                    for the technology world for 7 years. <br><br>
-                    Currently he is studing at <b class="User_Description_Title1">UMG Guatemala University</b>.
-                    <br><br> In his spare time he enjoys play pool and play video games with his friends.
-                </h4>
+    <div class="overlay box fullHeigh" style="display: flex; justify-content: center; align-items: center;">
+        <div style="text-align: center;">
+            <img class="imgProfile"
+                src="https://firebasestorage.googleapis.com/v0/b/portfolio-4c6ee.appspot.com/o/profile3.jpg?alt=media&token=f9d6ccaf-eb7a-49fb-a332-e3fbe4c3d91b"
+                alt="">
+            <h2 class="User_Description_Title1">Jose Alejandro Tamayo <span class="User_Description_Title2">is
+                    a</span> Full Stack Web Developer</h2>
+            <h4 class="User_Description_Title2">
+                who studies at the academy of software <b class="User_Description_Title1">COGNITS</b> and worked
+                for the technology world for 7 years. <br><br>
+                Currently he is studing at <b class="User_Description_Title1">UMG Guatemala University</b>.
+                <br><br> In his spare time he enjoys play pool and play video games.
+            </h4>
+            <div class="wrapper">
+                <ul>
+                    <li class="linkedin"><a href="https://www.linkedin.com/in/alejandro-tamayo-a73a9011a/"
+                            target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="github"><a href="https://github.com/jatamayo" target="_blank"><i
+                                class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="facebook"><a href="https://www.facebook.com/alejandro.tamayo.351/?viewas=100000686899395"
+                            target="_blank"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="instagram"><a href="https://www.instagram.com/jalejandro_tamayo/?hl=es-la"
+                            target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="whatsapp"><a href="https://api.whatsapp.com/send?phone=50241237743" target="_blank"><i
+                                class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
@@ -22,23 +42,28 @@
         <div>
             <div class="platziLogoDiv">
                 <br>
-                <img class="gitLogo" src="../../../assets/images/logos/git.png" alt="">
+                <img class="gitLogo"
+                    src="https://firebasestorage.googleapis.com/v0/b/portfolio-4c6ee.appspot.com/o/git.png?alt=media&token=4d6d7685-a01c-4ae2-b661-ff827930fffe"
+                    alt="">
             </div>
             <br><br>
             <div class="gitCards-wrap">
                 <!-- GIT CARDS -->
                 <div class="gitCard" *ngFor="let card of cards">
                     <div class="{{card.cardContainerType}} card_image_container">
-                        <img class="{{card.cardImageType}}" src="../../../assets/images/logos/{{card.img}}" alt="">
+                        <img class="{{card.cardImageType}}" src="{{card.img}}" alt="">
                     </div>
                     <div>
-                        <div *ngIf="card.projects[0].projectName" class="button"><button type="submit" (click)="gotoPortfolioProject(card.projects[0].link)"
+                        <div *ngIf="card.projects[0].projectName" class="button"><button type="submit"
+                                (click)="gotoPortfolioProject(card.projects[0].link)"
                                 class="{{card.cardButtonType}} finbyz-button"><b>{{card.projects[0].projectName}}</b></button>
                         </div>
-                        <div *ngIf="card.projects[1].projectName" class="button"><button type="submit" (click)="gotoPortfolioProject(card.projects[1].link)"
+                        <div *ngIf="card.projects[1].projectName" class="button"><button type="submit"
+                                (click)="gotoPortfolioProject(card.projects[1].link)"
                                 class="{{card.cardButtonType}} finbyz-button "><b>{{card.projects[1].projectName}}</b></button>
                         </div>
-                        <div *ngIf="card.projects[2].projectName" class="button"><button type="submit" (click)="gotoPortfolioProject(card.projects[2].link)"
+                        <div *ngIf="card.projects[2].projectName" class="button"><button type="submit"
+                                (click)="gotoPortfolioProject(card.projects[2].link)"
                                 class="{{card.cardButtonType}} finbyz-button "><b>{{card.projects[2].projectName}}</b></button>
                         </div>
                     </div>
@@ -51,18 +76,23 @@
 <!-- Parallax Container 3 -->
 <div class="parallax parallaxContainer3 overlay">
     <div class="overlay box">
-        <div class="fullHeigh fullWidth">
+        <div class="fullWidth">
             <div class="platziLogoDiv">
-                <img class="platziLogo" src="../../../assets/images/platzi/platziLogoTitle.png" alt="">
+                <img class="platziLogo"
+                    src="https://firebasestorage.googleapis.com/v0/b/portfolio-4c6ee.appspot.com/o/platziLogoTitle.png?alt=media&token=c1d1164f-7dde-45ce-9bca-cf54be4203e0"
+                    alt="">
             </div>
             <!-- PLATZI CERTIFICATIONS -->
             <div style="display: flex; flex-wrap: wrap; justify-content: center;" data-toggle="modal"
                 data-target="#certificateDialog">
                 <div class="certificateDiv" *ngFor="let certification of Certifications">
                     <div (click)="certificate(certification.img)">
-                        <img class="divPlatziLogo" src="../../../assets/images/platzi/platziLogo.png" alt="">
+                        <img class="divPlatziLogo"
+                            src="https://firebasestorage.googleapis.com/v0/b/portfolio-4c6ee.appspot.com/o/platziLogo.png?alt=media&token=37361f4c-56cd-45e7-bfc9-989dc696b42c"
+                            alt="">
                     </div>
-                    <div (click)="certificate(certification.img)" class="certificateTitle btn-ripple">{{certification.title}}</div>
+                    <div (click)="certificate(certification.img)" class="certificateTitle btn-ripple">
+                        {{certification.title}}</div>
                 </div>
             </div>
         </div>
@@ -72,7 +102,7 @@
 <div class="modal fade" id="certificateDialog" tabindex="-1" role="dialog" aria-labelledby="certificateDialog"
     aria-hidden="true">
     <div class="modal-dialog" role="document" style="display: flex; align-items: center; justify-content: center;">
-        <img style="width: 700px; height: 500px;" src="../../../assets/images/platzi/certificates/{{certificateImage}}" alt="">
+        <img style="width: 700px; height: 500px;" src="{{certificateImage}}" alt="">
     </div>
 </div>
 <!-- Parallax Container 4 -->
@@ -80,7 +110,9 @@
     <div class="overlay box">
         <div class="fullHeigh fullWidth" style="position: relative;">
             <div class="platziLogoDiv">
-                <img class="programmingLogo" src="../../../assets/images/logos/programming.png" alt="">
+                <img class="programmingLogo"
+                    src="https://firebasestorage.googleapis.com/v0/b/portfolio-4c6ee.appspot.com/o/programming.png?alt=media&token=086a44e2-2d2d-4e6d-8a4c-eae736072454"
+                    alt="">
             </div>
             <!-- SKILLS -->
             <div style="display: flex; justify-content: center; align-items: center; height: 60%; margin-top: 50px;">
@@ -103,9 +135,9 @@
             </div>
             <!-- JOBS -->
             <div style="position: absolute; bottom: 0; width: 100%; height: 125px;">
-                <div style="display: flex;justify-content: center; align-items: center;">
+                <div style="display: flex; justify-content: center; align-items: center;">
                     <div *ngFor="let job of jobs">
-                        <img class="{{job.class}}" src="../../../assets/images/jobs/{{job.img}}" alt="">
+                        <img class="{{job.class}}" src="{{job.img}}" alt="">
                     </div>
                 </div>
             </div>

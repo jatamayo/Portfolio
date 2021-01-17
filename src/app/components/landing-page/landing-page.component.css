@@ -4,7 +4,15 @@ body, html {
     padding: 0px;
 }
 
+.imgProfile {
+    height: 150px;
+    width: 150px;
+    border-radius: 100px;
+    margin-bottom: 35px;
+}
+
 /******** Paralax effect *********/
+
 .parallax {
     height: 100%;
     background-attachment: fixed;
@@ -12,23 +20,29 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .overlay {
     background-color: rgba(0, 0, 0, 0.6);
     width: 100%;
     height: 100%;
 }
-.centerDescription{
+
+.centerDescription {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.fullHeigh{
+
+.fullHeigh {
     height: 100vh;
 }
-.fullWidth{
+
+.fullWidth {
     width: 100%;
 }
+
 /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+
 @media only screen and (max-device-width: 1366px) {
     .parallaxContainer1 {
         background-attachment: scroll;
@@ -39,26 +53,26 @@ body, html {
 }
 
 .parallaxContainer1 {
-    background-image: url('../../../assets/images/background1.jpg');
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/portfolio-4c6ee.appspot.com/o/background1.jpg?alt=media&token=73a63b65-30d5-45f2-af34-190ff4de04e8');
 }
 
 .parallaxContainer2 {
-    background-image: url('../../../assets/images/git.jpg');
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/portfolio-4c6ee.appspot.com/o/background2.jpg?alt=media&token=7516d907-66fc-4627-ba29-1f4f66661838');
 }
 
 .parallaxContainer3 {
-    background-image: url('../../../assets/images/background3.jpg');
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/portfolio-4c6ee.appspot.com/o/background3.jpg?alt=media&token=5e3dadc5-4585-4a13-86b6-8f467addbce6');
 }
 
 .parallaxContainer4 {
-    background-image: url('../../../assets/images/background4.jpg');
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/portfolio-4c6ee.appspot.com/o/background4.jpg?alt=media&token=0f69ff36-088f-4fe9-9221-5aeab87e29bd');
 }
+
 /********  mainContainer_Section  *********/
+
 .MainContainer_Section {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: #007b9b;
+    width: 100%;
 }
 
 .User_Description_Title1 {
@@ -68,208 +82,170 @@ body, html {
 .User_Description_Title2 {
     color: #848484;
 }
+
 /********  GIT CARDS SECCION ********/
-.gitCard{
-    background-color:#848484;
-    height: 200px;
-    width: 165px;
-    margin: 25px;
-    border-radius: 5px;
-}
-.gitCards-wrap{
-    display: flex; 
-    flex-wrap: wrap; 
+
+
+.gitCards-wrap {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     width: 90%;
     margin-left: 5%;
 }
-.card_image_container{
+
+.card_image_container {
     height: 100px;
 }
+
 /********  GIT CARDS COLORS ********/
+
 .card_image_container_html {
     background: rgb(18, 28, 37);
     background: linear-gradient(90deg, rgba(18, 28, 37, 1) 0%, rgba(233, 114, 36, 1) 100%);
 }
+
 .card_image_container_angular {
     background: rgb(59, 11, 11);
     background: linear-gradient(90deg, rgba(59, 11, 11, 1) 0%, rgba(255, 0, 0, 1) 100%);
 }
+
 .card_image_container_mongo {
     background: rgb(0, 0, 0);
     background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(129, 197, 100, 1) 100%);
 }
+
 .card_image_container_sql {
     background: rgb(0, 0, 0);
     background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(47, 137, 196, 1) 100%);
 }
+
 .card_image_container_css {
     background: rgb(0, 0, 0);
     background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 145, 213, 1) 100%);
 }
+
 .card_image_container_java {
     background: rgb(83, 130, 161);
     background: linear-gradient(90deg, rgba(83, 130, 161, 1) 0%, rgba(231, 111, 0, 1) 100%);
 }
+
 .card_image_container_python {
     background: rgb(52, 121, 175);
     background: linear-gradient(90deg, rgba(52, 121, 175, 1) 0%, rgba(255, 217, 71, 1) 100%);
 }
+
 .card_image_container_bootstrap {
     background: rgb(18, 28, 37);
     background: linear-gradient(90deg, rgba(18, 28, 37, 1) 0%, rgba(142, 105, 198, 1) 100%);
 }
+
 .card_image_container_js {
     background: rgb(18, 28, 37);
     background: linear-gradient(90deg, rgba(18, 28, 37, 1) 0%, rgba(255, 216, 58, 1) 100%);
 }
+
 .card_image_container_node {
     background: rgb(18, 28, 37);
     background: linear-gradient(90deg, rgba(18, 28, 37, 1) 0%, rgba(144, 197, 63, 1) 100%);
 }
+
 .card_image_container_react {
     background: rgb(18, 28, 37);
     background: linear-gradient(90deg, rgba(18, 28, 37, 1) 0%, rgba(0, 216, 255, 1) 100%);
 }
-.card_image_html {
-    margin-top: 1px;
-    width: 100px;
-    height: 500x;
-    margin-left: 36px;
-}
-.card_image_css {
-    margin-top: 5px;
-    width: 70px;
-    height: 85px;
-    margin-left: 50px;
-}
-.card_image_java {
-    margin-top: 5px;
-    width: 50px;
-    height: 75px;
-    margin-left: 60px;
-}
-.card_image_python {
-    margin-top: 10px;
-    width: 70px;
-    height: 70px;
-    margin-left: 55px;
-}
-.card_image_bootstrap {
-    margin-top: 2px;
-    width: 85px;
-    height: 85px;
-    margin-left: 42px;
-}
-.card_image_js {
-    margin-top: 10px;
-    width: 170px;
-    height: 70px;
-    margin-left: -1px;
-}
-.card_image_node {
-    margin-top: 10px;
-    width: 200px;
-    height: 70px;
-    margin-left: -12px;
-}
-.card_image_react {
-    margin-top: 0px;
-    width: 140px;
-    height: 90px;
-    margin-left: 15px;
-}
-.card_image_angular {
-    margin-top: 12px;
-    width: 70px;
-    height: 70px;
-    margin-left: 50px;
-}
-.card_image_mongo {
-    margin-top: 8px;
-    width: 80px;
-    height: 80px;
-    margin-left: 42px;
-}
-.card_image_sql {
-    margin-top: 13px;
-    width: 67px;
-    height: 67px;
-    margin-left: 50px;
-}
 /********  GIT CARDS BUTTONS ********/
+
 button.button_js {
     color: #ffd83a;
     border: 3px solid #ffd83a;
 }
+
 button.button_js:before {
     background: rgb(18, 28, 37);
     background: linear-gradient(90deg, rgba(255, 216, 58, 1) 0%, rgba(18, 28, 37, 1) 100%);
 }
+
 button.button_node {
     color: #528e00;
     border: 3px solid #90c53f;
 }
+
 button.button_node:before {
     background: rgb(18, 28, 37);
     background: linear-gradient(90deg, rgba(18, 28, 37, 1) 0%, rgba(144, 197, 63, 1) 100%);
 }
+
 button.button_html {
     color: #e97224;
     border: 3px solid #e97224;
 }
+
 button.button_html:before {
     background: rgb(18, 28, 37);
     background: linear-gradient(90deg, rgba(233, 114, 36, 1) 0%, rgba(18, 28, 37, 1) 100%);
 }
+
 button.button_react {
     color: #007b9b;
     border: 3px solid #61dbfb;
 }
+
 button.button_react:before {
     background: rgb(18, 28, 37);
     background: linear-gradient(90deg, rgba(0, 216, 255, 1) 0%, rgba(18, 28, 37, 1) 100%);
 }
+
 button.button_angular {
     color: #940505;
     border: 3px solid #de140e;
 }
+
 button.button_angular:before {
     background: rgb(59, 11, 11);
     background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(59, 11, 11, 1) 100%);
 }
+
 button.button_sql {
     color: #3399db;
     border: 3px solid #3399db;
 }
+
 button.button_sql:before {
     background: rgb(0, 0, 0);
     background: linear-gradient(90deg, rgba(47, 137, 196, 1) 0%, rgba(0, 0, 0, 1) 100%);
 }
+
 button.button_css {
     color: #0091d5;
     border: 3px solid #0091d5;
 }
+
 button.button_c:before {
     background: rgb(0, 0, 0);
     background: linear-gradient(90deg, rgba(150, 58, 174, 1) 0%, rgba(0, 0, 0, 1) 100%);
 }
+
 button.button_java {
     color: #3479af;
     border: 3px solid #3479af;
 }
+
 button.button_java:before {
     background: rgb(83, 130, 161);
     background: linear-gradient(90deg, rgba(231, 111, 0, 1) 0%, rgba(83, 130, 161, 1) 100%);
 }
+
 button.button_python {
     color: #3479af;
     border: 3px solid #3479af;
 }
+
 button.button_python:before {
     background: rgb(255, 217, 71);
     background: linear-gradient(90deg, rgba(255, 217, 71, 1) 0%, rgba(52, 121, 175, 1) 100%);
 }
+
 button.button_mongo {
     color: #81c564;
     border: 3px solid #81c564;
@@ -279,6 +255,7 @@ button.button_mongo:before {
     background: rgb(0, 0, 0);
     background: linear-gradient(90deg, rgba(129, 197, 100, 1) 0%, rgba(0, 0, 0, 1) 100%);
 }
+
 /* ************* btn effect *************** */
 
 .button {
@@ -288,6 +265,7 @@ button.button_mongo:before {
     height: 20px;
     font-size: 10px;
 }
+
 .buttonCertificate {
     display: flex;
     justify-content: center;
@@ -296,6 +274,7 @@ button.button_mongo:before {
     font-size: 17px;
     border-radius: 18px;
 }
+
 button.finbyz-button {
     text-decoration: none;
     background-color: #fff;
@@ -311,6 +290,7 @@ button.finbyz-button {
     box-shadow: 0 2px 10px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .1);
     z-index: 2;
 }
+
 button.finbyz-button:before {
     -webkit-transition: .5s all ease;
     transition: .5s all ease;
@@ -323,9 +303,11 @@ button.finbyz-button:before {
     content: '';
     z-index: -1;
 }
+
 button.finbyz-button:hover, button.finbyz-button:focus {
     color: #FFF;
 }
+
 button.finbyz-button:hover:before, button.finbyz-button:focus:before {
     -webkit-transition: 0.5s all ease;
     transition: 0.5s all ease;
@@ -333,39 +315,46 @@ button.finbyz-button:hover:before, button.finbyz-button:focus:before {
     right: 0;
     opacity: 1;
 }
+
 /********* CERTIFICACIONES ************/
+
 .platziLogo {
     height: 55px;
 }
-.programmingLogo{
+
+.programmingLogo {
     height: 40px;
     margin-top: 10px;
     margin-bottom: 10px;
-
 }
+
 .gitLogo {
     height: 60px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
-.platziLogoDiv{
+
+.platziLogoDiv {
     background-color: #2c2f33;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.divPlatziLogo{
+
+.divPlatziLogo {
     width: 45px;
     height: 35px;
     padding-right: 10px;
 }
-.certificateTitle{
+
+.certificateTitle {
     padding-top: 8px;
     width: 100%;
 }
-.certificateDiv{
-    margin:25px;
+
+.certificateDiv {
+    margin: 25px;
     display: flex;
     color: #71ad0a;
     background-color: white;
@@ -373,47 +362,128 @@ button.finbyz-button:hover:before, button.finbyz-button:focus:before {
     width: 340px;
     height: 40px;
     font-size: 15px;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
     border-radius: 15px 5px 5px 15px;
     cursor: pointer;
 }
-.certificateDiv:hover{
+
+.certificateDiv:hover {
     display: flex;
     background-color: #98ca3f;
-    color:white;
+    color: white;
 }
-.skillTitle{
-    color:rgb(189, 189, 189);
+
+.skillTitle {
+    color: rgb(189, 189, 189);
 }
 
 .btn-ripple {
-	display: inline-block;
-	position: relative;
-	overflow: hidden;
-	transition: all ease-in-out .1s;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    transition: all ease-in-out .1s;
 }
+
 .btn-ripple::after {
-	content: "";
-	display: block;
-	position: absolute;
-	top: 0;
-	left: 25%;
-	height: 100%;
-	width: 50%;
-	background-color: #000;
-	border-radius: 50%;
-	opacity: 0;
-	pointer-events: none;
-	transition: all ease-in-out 1s;
-	transform: scale(5, 5);
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 25%;
+    height: 100%;
+    width: 50%;
+    background-color: #000;
+    border-radius: 50%;
+    opacity: 0;
+    pointer-events: none;
+    transition: all ease-in-out 1s;
+    transform: scale(5, 5);
 }
+
 .btn-ripple:active::after {
-	padding: 0;
-	margin: 0;
-	opacity: .1;
-	transition: 0s;
-	transform: scale(0, 0);
+    padding: 0;
+    margin: 0;
+    opacity: .1;
+    transition: 0s;
+    transform: scale(0, 0);
 }
 
-
+/* Style the list items inside the UL list, by setting its width, height and line-height 
+    and float them to left and set its border and border-radius.
+   */
+.wrapper ul li {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 4px solid #D8E2DC;
+    float: left;
+    transition: all 0.5s ease;
+}
+/* Style the icons by setting its color and margin-top value to 20px 
+  to align it properly */
+.wrapper ul li .fa {
+    color: #D8E2DC;
+    font-size: 22px;
+    transition: all 0.5s ease;
+}
+/* Now target the specific li classes for styling and use box-shadow effect to border and text-shadow effect
+    to icons for glowing effect and use transition property for smooth transition effect. */
+/*facebook*/
+.wrapper ul li:hover.facebook {
+    border: 5px solid #3b5998;
+    box-shadow: 0 0 15px #3b5998;
+    transition: all 0.5s ease;
+}
+.wrapper ul li:hover .fa-facebook {
+    color: #3b5998;
+    text-shadow: 0 0 15px #3b5998;
+    transition: all 0.5s ease;
+}
+/*twitter*/
+.wrapper ul li:hover.github {
+    border: 5px solid #2f363d;
+    box-shadow: 0 0 15px #2f363d;
+    transition: all 0.5s ease;
+}
+.wrapper ul li:hover .fa-github {
+    color: #2f363d;
+    text-shadow: 0 0 15px #2f363d;
+    transition: all 0.5s ease;
+}
+/* instagram */
+.wrapper ul li:hover.instagram {
+    border: 5px solid #bc2a8d;
+    box-shadow: 0 0 15px #bc2a8d;
+    transition: all 0.5s ease;
+}
+.wrapper ul li:hover .fa-instagram {
+    color: #bc2a8d;
+    text-shadow: 0 0 15px #bc2a8d;
+    transition: all 0.5s ease;
+}
+/* google */
+.wrapper ul li:hover.linkedin {
+    border: 5px solid #0a66c2;
+    box-shadow: 0 0 15px #0a66c2;
+    transition: all 0.5s ease;
+}
+.wrapper ul li:hover .fa-linkedin {
+    color: #0a66c2;
+    text-shadow: 0 0 15px #0a66c2;
+    transition: all 0.5s ease;
+}
+/* whatsapp */
+.wrapper ul li:hover.whatsapp {
+    border: 5px solid #4dc247;
+    box-shadow: 0 0 15px #4dc247;
+    transition: all 0.5s ease;
+}
+.wrapper ul li:hover .fa-whatsapp {
+    color: #4dc247;
+    text-shadow: 0 0 15px #4dc247;
+    transition: all 0.5s ease;
+}
